@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAS LAIS BENGKULU UTARA</title>
+    <style>
+        /* RESET DASAR */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* WARNA UTAMA (HIJAU TUA) */
+        :root {
+            --primary-green: #004d00; /* Hijau Tua */
+            --dark-green: #003300;
+            --light-green: #2e7d32;
+            --accent-gold: #ffd700;
+            --white: #ffffff;
+        }
+
+        body {
+            background-color: var(--primary-green);
+            color: var(--white);
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+        header {
+            background-color: var(--dark-green);
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 5px solid var(--accent-gold);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #ccc;
+        }
+
+        /* NAVIGASI */
+        nav {
+            background-color: var(--light-green);
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--accent-gold);
+        }
+
+        /* CONTAINER UTAMA */
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        /* HERO SECTION (GAMBAR LATAR) */
+        #home {
+            background-color: rgba(0, 77, 0, 0.8); /* Overlay transparan */
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 20px;
+            border: 1px solid #005500;
+        }
+
+        #home h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--accent-gold);
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--accent-gold);
+            color: var(--dark-green);
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background: #e6c200;
+        }
+
+        /* KARTU INFORMASI */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background-color: var(--dark-green);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--light-green);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            background-color: #004400;
+        }
+
+        .card h3 {
+            border-bottom: 2px solid var(--accent-gold);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: var(--dark-green);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-top: 3px solid var(--accent-gold);
+        }
+
+        /* RESPONSIF MOBILE */
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.8rem; }
+            nav ul li { display: block; margin: 10px 0; }
+            .container { width: 95%; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER UTAMA -->
+    <header>
+        <h1>MAS LAIS BENGKULU UTARA</h1>
+        <p>Membentuk Generasi Cerdas, Berakhlak Mulia, dan Berwawasan Global</p>
+    </header>
+
+    <!-- MENU NAVIGASI -->
+    <nav>
+        <ul>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#berita">Berita</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- KONTEN UTAMA -->
+    <div class="container">
+        
+        <!-- SECTION SAMBUTAN -->
+        <section id="home">
+            <h2>Selamat Datang di Website Resmi</h2>
+            <p>Assalamu'alaikum Wr. Wb.</p>
+            <p>Kami dengan bangga menyambut Anda di website resmi Madrasah Aliyah Swasta Lais Bengkulu Utara. Melalui platform ini, kami berharap dapat memberikan informasi terkini mengenai kegiatan akademik, ekstrakurikuler, dan prestasi siswa-siswi kami.</p>
+            <a href="#profil" class="btn">Lihat Profil Selengkapnya</a>
+        </section>
+
+        <!-- SECTION VISI MISI / PROFIL -->
+        <section id="profil">
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Visi Sekolah</h3>
+                    <p>Menjadi Madrasah yang menghasilkan lulusan yang cerdas, kompetitif, dan berakhlakul karimah berdasarkan iman dan takwa.</p>
+                </div>
+                <div class="card">
+                    <h3>Misi Sekolah</h3>
+                    <ul>
+                        <li>Meningkatkan kualitas pembelajaran yang aktif, inovatif, dan efektif.</li>
+                        <li>Membiasakan budaya disiplin dan bertanggung jawab.</li>
+                        <li>Mengembangkan prestasi akademik dan non-akademik.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Ekstrakurikuler</h3>
+                    <p>Kami menyediakan berbagai kegiatan ekstrakurikuler seperti:</p>
+                    <ul>
+                        <li>Pramuka</li>
+                        <li>Paskibra</li>
+                        <li>Robotika</li>
+                        <li>Jurnalistik</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION BERITA -->
+        <section id="berita" style="margin-top: 40px;">
+            <h2 style="border-bottom: 2px solid white; padding-bottom: 10px;">Berita Terbaru</h2>
+            <div class="card" style="margin-top: 20px;">
+                <h3>Penerimaan Peserta Didik Baru (PPDB) Tahun Ajaran 2025/2026</h3>
+                <p>Pendaftaran telah dibuka untuk tingkat Madrasah Aliyah. Segera daftarkan putra-putri Anda untuk mendapat pendidikan terbaik di Bengkulu Utara.</p>
+                <small style="color: #aaa;">Diposting pada: 20 Mei 2026</small>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="kontak">
+        <h3>Hubungi Kami</h3>
+        <p>MAS LAIS BENGKULU UTARA</p>
+        <p>Alamat: Desa Pal Tiga Puluh, Kecamatan Lais, Kabupaten Bengkulu Utara</p>
+        <p>Email: maslaisbu@gmail.com | Telp: 082318396228</p>
+        <br>
+        <p>&copy; 2026 MAS Lais Bengkulu Utara. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
